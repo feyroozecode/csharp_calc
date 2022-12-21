@@ -1,0 +1,15 @@
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/bin/Debug/net6.0/ahmad.calc
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/bin/Debug/net6.0/ahmad.calc.deps.json
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/bin/Debug/net6.0/ahmad.calc.runtimeconfig.json
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/bin/Debug/net6.0/ahmad.calc.dll
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/bin/Debug/net6.0/ahmad.calc.pdb
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.csproj.AssemblyReference.cache
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.GeneratedMSBuildEditorConfig.editorconfig
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.AssemblyInfoInputs.cache
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.AssemblyInfo.cs
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.csproj.CoreCompileInputs.cache
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.dll
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/refint/ahmad.calc.dll
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.pdb
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ahmad.calc.genruntimeconfig.cache
+/home/ibrahim/dev/dotNetProjects/gabBootCamp/ahmad.calc/obj/Debug/net6.0/ref/ahmad.calc.dll
