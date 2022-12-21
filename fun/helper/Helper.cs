@@ -20,9 +20,10 @@ namespace Main.fun.helper
             return Convert.ToInt32(a);
         }
 
-        public static String Afficher(String s){
+      
+        public static void Afficher(String s){
 
-            return s;
+            Console.WriteLine(s);
         }
 
     }

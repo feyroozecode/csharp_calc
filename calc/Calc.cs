@@ -1,11 +1,12 @@
+#nullable disable
 
 using Main.fun.helper;
-using Main.Operation;
+using Operation;
 
 namespace Main.Calc{
 class Calc{
 
-
+    static Operation.Operations operations ;
     static List<int> validesRespons = new List<Int32>();
     static String calcStringType = "";
     static int calcType;
@@ -14,19 +15,20 @@ class Calc{
 
     public static void start(){
         
+        operations = new Operation.Operations();
+
         validesRespons.Add(1);
         validesRespons.Add(2);
         validesRespons.Add(3);
         validesRespons.Add(4);
         validesRespons.Add(5);
-
         
         Console.WriteLine(" *********** Bonjour bienvenue sur la calculatrice Majic de Ahmad ************ \n ");
         
         Console.WriteLine("Enter votre nom :"); 
-        userName = Console.ReadLine();
+        userName = Console.ReadLine();  
 
-        Console.WriteLine("bonjour "+ userName);
+        Console.WriteLine(" ****** bonjour "+ userName + " 😎, ravis de vous connaitre, je suis ahmadCalc une IA 🤖 qui fait ******");
     
         boucle = true;
         
@@ -34,7 +36,7 @@ class Calc{
             Console.WriteLine("Veillez Choisir le type d'opération à faire : \n");
             Console.WriteLine(" \n1: Addition \n2: Soustraction \n3: Multiplication \n4:Division \n5: Racine Carré \n0: Quitter le program . \n");
             
-            calcStringType = Console.ReadLine();
+            calcStringType = Convert.ToString(Console.ReadLine());
 
             try
             {
@@ -50,8 +52,8 @@ class Calc{
                         Console.WriteLine("Ajouter le 2er nombre : ");
                         int b = Convert.ToInt32(Console.ReadLine());
                         
-                        int res = Main.Operation.Operations.Add(a, b);
-                        Console.WriteLine("Le resultat de l'addition = " + res);
+                        int res = Operations.Add(a, b);
+                        Console.WriteLine("Le resultat de l'addition = " + res + " 🥳");
                     
                         boucle = Continuez();
                     } else if(calcType == validesRespons[1]){
@@ -62,7 +64,7 @@ class Calc{
                         Console.WriteLine("Ajouter le 2er nombre : ");
                         int b = Convert.ToInt32(Console.ReadLine());
 
-                        int res = Operation.Operations.minus(a, b);
+                        int res = Operations.minus(a, b);
                         Console.WriteLine("Le resultat de la soustraction = " + res);
 
                         boucle = Continuez();
@@ -74,7 +76,7 @@ class Calc{
                         Console.WriteLine("Ajouter le 2er nombre : ");
                         int b = Convert.ToInt32(Console.ReadLine());
 
-                        int res = Operation.Operations.multiply(a, b);
+                        int res = Operations.multiply(a, b);
                         Console.WriteLine("Le resultat de la multiplication = " + res);
 
                         boucle = Continuez();
@@ -86,7 +88,7 @@ class Calc{
                         Console.WriteLine("Ajouter le 2er nombre : ");
                         int b = Convert.ToInt32(Console.ReadLine());
 
-                        int res = Operation.Operations.divide(a, b);
+                        int res = Operations.divide(a, b);
                         if(res != 0){
                             Console.WriteLine("Le resultat de la division = " + res);
                         } else{
@@ -98,13 +100,13 @@ class Calc{
                         Console.WriteLine("Ajouter le nombre : ");
                         int a = Convert.ToInt32(Console.ReadLine());
                         
-                        int res = Operation.Operations.racineCarre(a);
-                        Console.WriteLine("La racine carré de "+ a + " = " + res);
+                        int res = Operations.racineCarre(a);
+                        Console.WriteLine("La racine carré de "+ a +" = " + res + " c'etait facile 😅 " + userName);
                     
                         boucle = Continuez();
                     }
                     else {
-                        Helper.Afficher("Veillez entrer un nombre valide ");
+                        Helper.Afficher("Veillez entrer un nombre valide 🫣");
                        
                     }
 
@@ -134,7 +136,7 @@ class Calc{
         if(userRes == "o"){
             return true;
         } else {
-            Console.WriteLine("\n Fin, au revoir "+ userName );
+            Console.WriteLine("\n Fin, au revoir "+ userName + "🥱");
             return false;
         }
 

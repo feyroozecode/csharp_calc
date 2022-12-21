@@ -1,12 +1,12 @@
 
-namespace Main.Operation {
+namespace Operation {
 class Operations {
     // add
     public static int Add(int a, int b){
         int result = 0;
 
-        int fA = convertType(a); 
-        int fB = convertType(b);
+        int fA = convertToInt(a); 
+        int fB = convertToInt(b);
 
         result = fA+fB;
 
@@ -16,8 +16,8 @@ class Operations {
     public static int minus(int a, int b){
         int result = 0;
         
-        int fA = convertType(a); 
-        int fB = convertType(b);
+        int fA = convertToInt(a); 
+        int fB = convertToInt(b);
 
 
         result = fA-fB;
@@ -29,8 +29,8 @@ class Operations {
 
         int result = 0;
         
-        int fA = convertType(a); 
-        int fB = convertType(b);
+        int fA = convertToInt(a); 
+        int fB = convertToInt(b);
 
 
         result = fA*fB;
@@ -38,14 +38,17 @@ class Operations {
         return result;
     }
 
+    /*
+      method for divide number a to number b
+    */
     public static int divide(int a, int b){
 
         try
         {
             int result = 0;
         
-            int fA = convertType(a); 
-            int fB = convertType(b);
+            int fA = convertToInt(a); 
+            int fB = convertToInt(b);
 
             result = fA/fB;
 
@@ -53,7 +56,7 @@ class Operations {
         }
         catch (DivideByZeroException)
         {
-            Console.WriteLine("Division par 0 impossible \n");
+            Console.WriteLine("Division par 0 impossible 😠 \n");
         }
 
         return 0;
@@ -65,7 +68,15 @@ class Operations {
         return Convert.ToInt32(Math.Sqrt(a));
     }
 
- protected static int convertType(Object a){
+    // calculates a entered inscruction with accepting add, minus, multiply and divide, e.g: (5+10-9*3/6)
+    public static int complexCalc(String instruction){
+        char[] allStrings = instruction.ToCharArray();
+
+        return 0; // default value 
+    }
+
+     
+     protected static int convertToInt(Object a){
 
         return Convert.ToInt32(a);
     }
